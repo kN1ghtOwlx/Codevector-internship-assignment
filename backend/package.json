@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "seed": "python3 scripts/seed_products.py"
+    "seed": "node scripts/seed_products.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
