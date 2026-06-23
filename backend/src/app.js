@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-// const productRoutes = require("./routes/productRoutes");
+const productRoutes = require("./routes/productRoutes");
 
 function createApp() {
   const app = express();
@@ -13,7 +13,7 @@ function createApp() {
     return res.json({ status: "ok" });
   });
 
-//   app.use("/api/products", productRoutes);
+  app.use("/api/products", productRoutes);
 
   app.use((err, req, res, next) => {
     console.error(err);
